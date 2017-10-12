@@ -1,43 +1,34 @@
 <?php
 
-class villes
+class citys
 {
-  private $_nom;
-  private $_departement;
+  private $_name;
+  private $_department;
 
-  public function afficher()
+  public function display()
   {
-    echo "La ville de ", $this->nom(), " et dans le departement du ", $this->departement(),'<br />';
+    echo "the city of ", $this->name(), " and in the Department of ", $this->department(),'<br />';
   }
 
-  public function setNom($nom)
+  public function setName($name)  //Switch to modify the attribute $_name
   {
 
-   $this->_nom = $nom;
+   $this->_name = $name;
   }
 
-  public function nom()
+  public function setDepartment($department)  //Switch to modify the attribute $_ department
   {
-    return $this->_nom;
+  $this->_department = $department;
   }
 
-  public function setDepartement($departement)
-  {
-  $this->_departement = $departement;
-  }
-
-  public function departement()
-  {
-    return $this->_departement;
-  }
 }
 
-$ville1 = new villes;
-$ville1->setNom('Lille');
-$ville1->setDepartement('Nord');
-$ville1->afficher();
+$city1 = new citys;  //First city
+$city1->setName('Lille');
+$city1->setDepartment('Nord');
+$city1->display();
 
-$ville2 = new villes;
-$ville2->setNom('Montreal');
-$ville2->setDepartement('Quebec');
-$ville2->afficher();
+$city2 = new citys; // second city
+$city2->setName('Montreal');
+$city2->setDepartment('Quebec');
+$city2->display();
