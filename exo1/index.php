@@ -39,7 +39,7 @@ $city1->setName('Lille');
 $city1->setDepartment('Nord');
 $city1->display();
 
-$city2 = new citys; // second
+$city2 = new citys; // second city
 $city2->setName('Montreal');
 $city2->setDepartment('Quebec');
 $city2->display();
